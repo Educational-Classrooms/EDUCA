@@ -1,0 +1,2 @@
+# EDUCA
+Registro de Estudiante

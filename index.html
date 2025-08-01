@@ -1,4 +1,57 @@
-<form id="formularioEstudiantes">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Estudiantes</title>
+  <style>
+    body { font-family: sans-serif; background-color: #f4f4f4; padding: 20px; }
+    section { background: #fff; padding: 15px; border-radius: 6px; margin-bottom: 20px; }
+    h2 { margin-top: 0; }
+    label { display: block; margin-bottom: 5px; font-weight: bold; }
+    input, select { width: 100%; padding: 8px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <section>
+    <h2>Datos personales</h2>
+    <label for="nombre1">Primer nombre:</label>
+    <input type="text" id="nombre1" name="nombre1" required>
+
+    <label for="nombre2">Segundo nombre:</label>
+    <input type="text" id="nombre2" name="nombre2">
+
+    <label for="apellido1">Primer apellido:</label>
+    <input type="text" id="apellido1" name="apellido1" required>
+
+    <label for="apellido2">Segundo apellido:</label>
+    <input type="text" id="apellido2" name="apellido2">
+  </section>
+
+  <section>
+    <h2>Correo electrónico</h2>
+    <label for="correoGoogle">Correo de Google:</label>
+    <input type="email" id="correoGoogle" name="correoGoogle">
+
+    <label for="correoOutlook">Correo de Outlook:</label>
+    <input type="email" id="correoOutlook" name="correoOutlook">
+  </section>
+
+  <section>
+    <h2>Fecha de nacimiento</h2>
+    <label for="fechaNacimiento">Selecciona tu fecha:</label>
+    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+  </section>
+
+  <section>
+    <h2>Clave de acceso</h2>
+    <label for="claveEstudiante">Clave personalizada (asignada por Ángel):</label>
+    <input type="password" id="claveEstudiante" name="claveEstudiante" required placeholder="Código entregado por el educador">
+  </section>
+
+  <form id="formularioEstudiantes">
   <section>
     <label for="nombre1">Primer nombre:</label>
     <input type="text" id="nombre1" name="nombre1" required>
@@ -33,3 +86,8 @@
 
   <button type="submit">Enviar</button>
 </form>
+
+  
+</body>
+</html>
+
